@@ -1,0 +1,141 @@
+/* Style global pour le TodoTab */
+.todo-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todo-table th, .todo-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.todo-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.todo-table td {
+  color: #333;
+}
+
+.todo-table button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-table .complete-btn {
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.todo-table .complete-btn:hover {
+  background-color: #218838;
+}
+
+.todo-table .delete-btn {
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.todo-table .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.todo-table input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todo-table input[type="text"]:focus {
+  border-color: #0056b3;
+}
+
+.todo-table button.add-task-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-table button.add-task-btn:hover {
+  background-color: #0056b3;
+}
+
+.todo-table .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Style pour l'input */
+input[type="text"] {
+  width: 70%;
+  padding: 12px 15px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Style pour le bouton d'ajout */
+button.add-task-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.add-task-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+button.add-task-btn:active {
+  background-color: #004a9e;
+  box-shadow: none;
+}
